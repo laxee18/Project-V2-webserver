@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Projects Minecraft Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Press Start 2P', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://wallpapercave.com/w/wp13360689.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #f1c40f;
+            text-transform: uppercase;
+            animation: color-change 5s infinite;
+            -webkit-text-stroke: 1px black; /* Tambahkan stroke pada teks h1 */
+            text-stroke: 1px black;
+            background: none; /* Hapus latar belakang */
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 0;
+            color: white; /* Warna teks h2 */
+            -webkit-text-stroke: 1px black; /* Tambahkan stroke pada teks h2 */
+            text-stroke: 1px black;
+            background: none; /* Hapus latar belakang */
+        }
+
+        h2 span {
+            display: inline-block;
+            animation: color-change-h2 5s infinite;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: white; /* Warna teks paragraf */
+            -webkit-text-stroke: 1px black; /* Tambahkan stroke pada teks paragraf */
+            text-stroke: 1px black;
+            background: none; /* Hapus latar belakang */
+        }
+
+        .intro-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 100px;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 25px;
+            transition: background 0.3s, transform 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* press start 2P */
+            -webkit-text-stroke: none; /* Hapus stroke pada teks pilihan */
+            text-stroke: none;
+            background: linear-gradient(90deg, #25D366, #128C7E); /* Hanya untuk teks pilihan */
+        }
+
+        .link-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .link-logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .link-item.whatsapp {
+            background: linear-gradient(90deg, #25D366, #128C7E);
+        }
+
+        .link-item.discord {
+            background: linear-gradient(90deg, #7289DA, #5865F2);
+        }
+
+        .link-item.donasi {
+            background: linear-gradient(90deg, #FFA500, #FF6347);
+        }
+
+        .link-item.clicked {
+            transform: scale(0.95);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 12px;
+            color: #ddd;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .links a {
+                width: 80%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 40px;
+            }
+
+            .links {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .links a {
+                width: auto;
+                flex: 1;
+                margin: 10px;
+            }
+        }
+
+        /* Gradiasi collor server */
+        @keyframes color-change {
+            0% { color: #ff6347; }
+            25% { color: #ff8c00; }
+            50% { color: #f1c40f; }
+            75% { color: #32CD32; }
+            100% { color: #3498db; }
+        }
+
+        /* Gradiasi Bergilir <h2> */
+        @keyframes color-change-h2 {
+            0%, 100% { color: #ff6347; }
+            10% { color: #ff8c00; }
+            20% { color: #f1c40f; }
+            30% { color: #32CD32; }
+            40% { color: #3498db; }
+            50% { color: #8e44ad; }
+            60% { color: #e74c3c; }
+            70% { color: #e67e22; }
+            80% { color: #2ecc71; }
+            90% { color: #1abc9c; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> REALITY PROJECTS </h1>
+        <h2 id="animated-h2"></h2>
+        <p class="intro-text">Selamat Datang Di Website Server Reality Projects Silahkan Join Whatsapp dan Discord Server Atau Kalian Bisa Berdonasi Di Bawah Ini Agar Server Bisa Makin Berkembang Kedepannya Terima Kasih :</p>
+        <div class="links">
+            <a href="https://chat.whatsapp.com/IZrJ2YTQTTqA1sJ5VzRil3" target="_blank" class="link-item whatsapp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="link-logo">
+                Whatsapp
+            </a>
+            <a href="https://discord.com/invite/H29uH7YQUQ" target="_blank" class="link-item discord">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg" alt="Discord" class="link-logo">
+                Discord
+            </a>
+            <a href="https://saweria.co/RealityProjecrts" target="_blank" class="link-item donasi">
+                <img src="https://saweria.co/favicon.ico" alt="Donasi" class="link-logo">
+                Donasi
+            </a>
+        </div>
+    </div>
+    <footer>
+        <h4>&copy; Reality Projects 2024 </h4>
+        <h4>LaxeeWho?</h4>
+    </footer>
+    <script>
+        // Array berisi URL gambar-gambar latar belakang yang akan digunakan
+        const backgrounds = [
+            'https://wallpapercave.com/w/wp13958017.png',
+            'https://wallpapercave.com/w/wp12888491.jpg',
+            'https://wallpapercave.com/w/wp13472258.jpg',
+            'https://wallpapercave.com/w/wp13360689.png',
+            'https://wallpapercave.com/w/wp13958017.png',
+            'https://wallpapercave.com/w/wp12888491.jpg',
+            'https://wallpapercave.com/w/wp13472258.jpg',
+            'https://wallpapercave.com/w/wp13360689.png'
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.background = `url('${backgrounds[currentIndex]}') no-repeat center center fixed`;
+            document.body.style.backgroundSize = 'cover';
+            currentIndex = (currentIndex + 1) % backgrounds.length;
+        }
+
+        // Panggil fungsi changeBackground setiap 5 detik
+        setInterval(changeBackground, 7000);
+
+        // Animasi teks berganti warna pada h2
+        const h2Text = " MCPE - JAVA ";
+        const h2Element = document.getElementById('animated-h2');
+
+        h2Element.innerHTML = h2Text.split('').map((char, index) => {
+            return `<span style="animation-delay: ${index * 0.3}s">${char}</span>`;
+        }).join('');
+    </script>
+</body>
+</html>
